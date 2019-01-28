@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "i-load-more": "../../../static/dist/load-more/index",
+    "i-swipeout": "../../../static/dist/swipeout/index"
+  }
+}

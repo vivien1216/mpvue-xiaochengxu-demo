@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/main",
     "pages/order/main",
+    "pages/recommend/main",
     "pages/user/main"
   ],
   "window": {
@@ -27,6 +28,12 @@
           "iconPath": "static/img/dd.png",
           "selectedIconPath": "static/img/dds.png",
           "text": "订单"
+        },
+        {
+          "pagePath": "pages/recommend/main",
+          "iconPath": "static/img/tj1.png",
+          "selectedIconPath": "static/img/tj1s.png",
+          "text": "推荐"
         },
         {
           "pagePath": "pages/user/main",

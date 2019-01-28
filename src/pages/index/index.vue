@@ -82,24 +82,14 @@ export default {
  created () {
    this.getSellerData();
  },
- computed: {
-   shopping () {
-     const shopping = [];
-     this.seller.forEach(item => {
-      shopping.push(item);
-     })
-     return shopping
-   }
- },
  methods: {
    getSellerData () {
-     let _this = this
      fly.get("https://www.easy-mock.com/mock/5c45e5cbfb5b9a1c0746774e/example/foods")
         .then((res) => {
           if (res.status === 200) {
             let seller = res.data
-            _this.loadingShow = false
-            _this.seller = seller.data
+            this.loadingShow = false
+            this.seller = seller.data
           }
         })
         .catch(function (err) {
